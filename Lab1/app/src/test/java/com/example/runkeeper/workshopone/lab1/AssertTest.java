@@ -1,4 +1,4 @@
-package com.example.runkeeper.lab1;
+package com.example.runkeeper.workshopone.lab1;
 
 import org.junit.Ignore;
 import org.junit.Test;

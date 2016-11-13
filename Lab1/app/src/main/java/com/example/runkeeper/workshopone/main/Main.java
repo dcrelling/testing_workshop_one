@@ -1,4 +1,4 @@
-package com.example.runkeeper.lab1;
+package com.example.runkeeper.workshopone.main;
 
 
 public class Main
