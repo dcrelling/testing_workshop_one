@@ -31,3 +31,51 @@ EX 2. Verify Test Conidtions With Asserts
 5. Create a new test method that will assert two numbers are not equal.
 
 6. Write a test that will be ignored when the test class is run and will also print a reason why the test is ignored.
+
+
+
+
+=====================================================================================
+
+Ex 3. Using jUnit AssertThat and Hamcrest Matchers
+
+1. Create a new test class named AssertThatTest
+
+2. Create a new test method that given the age 30 will 
+
+	* assertThat the age is equal to 30
+	* assertThat it is not equal to 30.
+
+	HINT! use is(), equalTo() and not() matcher methods. 
+
+3. Create a new test method that given 100.00 dollars will
+
+    * assertThat the dollar amount is either 100.00 or 90.9
+    * assertThat the dollar amount is not 99.99 and not 60.00
+    * aeertThat the dollar amount matches any of the following values 100.00 , 1.00, 55.00, 88.00, 67.8
+    * assertThat the dollar amount doesn't match either 0.0 or 200.00
+
+    HINT! use is(), not(), and(), anyOf()
+
+4. Create a new test method that will assert the contents of a list 
+
+List<Double> salary = new ArrayList<Double>();
+		salary.add(50.00);
+		salary.add(200.00);
+		salary.add(500.00);
+
+     * assertThat 50.00 is in the list
+     * assertThat 50.00 and 200.00 are in the list
+     * assertThat 1.00 is not in the list
+     * asssertThat the list doesn't contain 510.00 and 2001.00
+
+     HINT! use hasItems() 
+
+5. Create a new test method that given the name "Rosie Jr Ruiz"
+
+  * assertsThat the name begins with "Rosie"
+  * assertsThat the name ends with "Ruiz"
+  * assertsThat the name contains "Jr"
+
+ 
+
