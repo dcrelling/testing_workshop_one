@@ -1,0 +1,23 @@
+EX 1.
+
+1. Create a jUnit test class named "SanityTest"
+
+2. Add one test method that will print the name of the test when run. Hint - Hint - System.out.println("");
+
+3. Add a method that will print to the console "Test started" before each test is run. 
+
+4. Add a method that will print to the console "End of test" after each test ends.
+
+5. Add a method that will print to the console "Starting all tests" only once when the test class is run.
+
+6. Add a metthod that will print to the console "End of all tests" only once when all the tests have run.
+
+7. Add one more test method that will print out the name of the test when run.
+
+
+
+
+==========================================================================
+
+
+EX 2.
