@@ -1,23 +1,33 @@
-EX 1.
+EX 1. - Test Class Strucutre
 
 1. Create a jUnit test class named "SanityTest"
 
 2. Add one test method that will print the name of the test when run. Hint - Hint - System.out.println("");
 
-3. Add a method that will print to the console "Test started" before each test is run. 
+3. Add a method that will print to the console "Before is invoked" before each test is run. 
 
-4. Add a method that will print to the console "End of test" after each test ends.
+4. Add a method that will print to the console "After is invoked" after each test ends.
 
 5. Add a method that will print to the console "Starting all tests" only once when the test class is run.
 
-6. Add a metthod that will print to the console "End of all tests" only once when all the tests have run.
+6. Add a metthod that will print to the console "All Tests Stopped" only once when all the tests have run.
 
 7. Add one more test method that will print out the name of the test when run.
-
-
 
 
 ==========================================================================
 
 
-EX 2.
+EX 2. Verify Test Conidtions With Asserts
+
+1. Create a new test class named AssertTest
+
+2. Create a new test method that will assert True and assert False.
+
+3. Create a new test method that will assert some Object is null and also assert that some Object is not null;
+
+4. Create a new test method that will assert two numbers are equal.
+
+5. Create a new test method that will assert two numbers are not equal.
+
+6. Write a test that will be ignored when the test class is run and will also print a reason why the test is ignored.

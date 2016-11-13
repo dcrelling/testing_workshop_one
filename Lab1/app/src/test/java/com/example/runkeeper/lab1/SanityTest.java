@@ -34,12 +34,12 @@ public class SanityTest {
 
     @BeforeClass
     public static void beforeClass() {
-        System.out.println("***Before Class is invoked");
+        System.out.println("***Starting All Tests");
     }
 
     @AfterClass
     public static void afterClass() {
-        System.out.println("***After Class is invoked");
+        System.out.println("***All Tests Stopped");
     }
 }
 
