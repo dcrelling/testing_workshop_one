@@ -74,22 +74,4 @@ public class AssertThatTest
         assertThat(name, endsWith("Ruiz"));
         assertThat(name, containsString("Jr"));
     }
-
-
-    //If I have time go over how to create custom matchers and user them with assertThant
-
-//	@Test
-//	public void lessthanOrEquals_custom_matcher() throws Exception {
-//		int actualGoalScored = 2;
-//		assertThat(actualGoalScored, lessThanOrEqual(4));
-//		assertThat(actualGoalScored, lessThanOrEqual(2));
-//
-//		double originalPI = 3.14;
-//		assertThat(originalPI, lessThanOrEqual(9.00));
-//		String authorName = "Sujoy";
-//		assertThat(authorName, lessThanOrEqual("Sujoy1"));
-//
-//		int maxInt = Integer.MAX_VALUE;
-//		assertThat(maxInt, lessThanOrEqual(Integer.MIN_VALUE));
-//	}
 }
