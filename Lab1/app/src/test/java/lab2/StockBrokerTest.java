@@ -76,7 +76,9 @@ public class StockBrokerTest
     {
         Stock uvsityCorp = new Stock("UV", "UVSITY Corporation ",
                 new BigDecimal(100.00));
+
         when(marketWatcher.getQuote(anyString())).thenReturn(uvsityCorp);
+
         assertNotNull(marketWatcher.getQuote("UV"));
     }
 
@@ -85,9 +87,13 @@ public class StockBrokerTest
     {
         when(portfolio.getAvgPrice(Matchers.isA(Stock.class))).thenReturn(
                 new BigDecimal("10.00"));
+
         Stock aCorp = new Stock("A", "A Corp", new BigDecimal(11.20));
+
         when(marketWatcher.getQuote(anyString())).thenReturn(aCorp);
+
         broker.perform(portfolio, aCorp);
+
         verify(portfolio).sell(aCorp, 10);
     }
 
@@ -371,7 +377,7 @@ public class StockBrokerTest
 
     }
 
-    class BlueChipStockMatcher extends ArgumentMatcher<String>
+    class BlueChipStockMatcher implements ArgumentMatcher<String>
     {
         @Override
         public boolean matches(Object symbol)

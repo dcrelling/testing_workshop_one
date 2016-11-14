@@ -1,0 +1,18 @@
+Ex1 Create Mocks and SetUp
+
+1. Create a new test class named StockBrokerTest create a mock dependency for the MarketWatcher and Protfolio classes
+
+2. Create a stub for the getPrice() method of the Stock class
+
+3. Create a method that will create and setup a new StockBrocker class before each test. Also pass any mock dependancies that the StockBroker class needs
+
+
+
+Ex3 Do some Testing
+
+1. Create a test method that tests the MarketWatcher mocks getQuote() method and returns the current stock status and assert that it is not null.
+
+HINT! use when().thenReturn method on the mock marketWatcher
+
+2. Create a test method that tests the StockBrokers perform() method and verifies that the Portfolio mocks sell() method was called when there is a 10% gain.
+

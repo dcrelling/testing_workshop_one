@@ -14,7 +14,7 @@ public class StockBroker
         this.market = market;
     }
 
-    void perform(Portfolio portfolio, Stock stock)
+    public void perform(Portfolio portfolio, Stock stock)
     {
         Stock liveStock = market.getQuote(stock.getSymbol());
         BigDecimal avgPrice = portfolio.getAvgPrice(stock);
