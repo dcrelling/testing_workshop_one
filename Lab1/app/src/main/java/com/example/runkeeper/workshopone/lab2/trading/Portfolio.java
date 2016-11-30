@@ -9,10 +9,11 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Portfolio
+public class Portfolio implements IPortfolio
 {
     private Map<String, List<Stock>> stockMap = new HashMap<String, List<Stock>>();
 
+    @Override
     public void buy(Stock stock)
     {
         List<Stock> stocks = stockMap.get(stock.getSymbol());
@@ -28,6 +29,7 @@ public class Portfolio
         }
     }
 
+    @Override
     public void sell(Stock stock, int quantity)
     {
         List<Stock> stocks = stockMap.get(stock.getSymbol());
@@ -47,6 +49,7 @@ public class Portfolio
         }
     }
 
+    @Override
     public BigDecimal getAvgPrice(Stock stock)
     {
         List<Stock> stocks = stockMap.get(stock.getSymbol());
@@ -64,6 +67,7 @@ public class Portfolio
         return avgPrice;
     }
 
+    @Override
     public BigDecimal getCurrentValue()
     {
         BigDecimal avgPrice = BigDecimal.ZERO;

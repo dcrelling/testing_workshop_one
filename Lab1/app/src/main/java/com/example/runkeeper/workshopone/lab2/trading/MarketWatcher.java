@@ -3,7 +3,11 @@ package com.example.runkeeper.workshopone.lab2.trading;
 
 import com.example.runkeeper.workshopone.lab2.dto.Stock;
 
-public interface MarketWatcher
+public class MarketWatcher implements IMarketWatcher
 {
-    Stock getQuote(String symbol);
+    @Override
+    public Stock getQuote(String symbol)
+    {
+        return null;
+    }
 }

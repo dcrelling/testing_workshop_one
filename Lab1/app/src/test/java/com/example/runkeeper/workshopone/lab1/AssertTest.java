@@ -57,8 +57,8 @@ public class AssertTest
         assertSame(i, j);
     }
 
-    @Test
     @Ignore("John's Runkeeper 5k stuff failing")
+    @Test
     public void when_today_is_holiday_then_stop_alarm() throws Exception
     {
 

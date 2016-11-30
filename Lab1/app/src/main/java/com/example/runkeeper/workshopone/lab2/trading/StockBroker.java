@@ -5,7 +5,7 @@ import com.example.runkeeper.workshopone.lab2.dto.Stock;
 import java.math.BigDecimal;
 
 
-public class StockBroker
+public class StockBroker implements IStockBroker
 {
     private final static BigDecimal LIMIT = new BigDecimal("0.10");
 
@@ -14,6 +14,7 @@ public class StockBroker
         this.market = market;
     }
 
+    @Override
     public void perform(Portfolio portfolio, Stock stock)
     {
         Stock liveStock = market.getQuote(stock.getSymbol());
