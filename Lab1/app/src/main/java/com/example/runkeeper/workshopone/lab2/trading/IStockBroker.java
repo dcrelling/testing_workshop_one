@@ -8,6 +8,6 @@ import com.example.runkeeper.workshopone.lab2.dto.Stock;
 
 public interface IStockBroker
 {
-     void perform(Portfolio portfolio, Stock stock);
+     void perform(IPortfolio portfolio, Stock stock);
 
 }

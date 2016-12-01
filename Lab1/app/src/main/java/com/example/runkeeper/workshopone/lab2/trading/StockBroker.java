@@ -8,14 +8,15 @@ import java.math.BigDecimal;
 public class StockBroker implements IStockBroker
 {
     private final static BigDecimal LIMIT = new BigDecimal("0.10");
+    private final IMarketWatcher market;
 
-    public StockBroker(MarketWatcher market)
+    public StockBroker(IMarketWatcher market)
     {
         this.market = market;
     }
 
     @Override
-    public void perform(Portfolio portfolio, Stock stock)
+    public void perform(IPortfolio portfolio, Stock stock)
     {
         Stock liveStock = market.getQuote(stock.getSymbol());
         BigDecimal avgPrice = portfolio.getAvgPrice(stock);
@@ -31,5 +32,4 @@ public class StockBroker implements IStockBroker
         }
     }
 
-    private final MarketWatcher market;
 }

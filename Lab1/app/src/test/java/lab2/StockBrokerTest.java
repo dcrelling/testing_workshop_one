@@ -1,6 +1,8 @@
 package lab2;
 
 import com.example.runkeeper.workshopone.lab2.dto.Stock;
+import com.example.runkeeper.workshopone.lab2.trading.IMarketWatcher;
+import com.example.runkeeper.workshopone.lab2.trading.IPortfolio;
 import com.example.runkeeper.workshopone.lab2.trading.MarketWatcher;
 import com.example.runkeeper.workshopone.lab2.trading.Portfolio;
 import com.example.runkeeper.workshopone.lab2.trading.StockBroker;
@@ -50,9 +52,9 @@ public class StockBrokerTest
 {
 
     @Mock
-    MarketWatcher marketWatcher;
+    IMarketWatcher marketWatcher;
     @Mock
-    Portfolio portfolio;
+    IPortfolio portfolio;
 
     StockBroker broker;
 
@@ -74,8 +76,8 @@ public class StockBrokerTest
     @Test
     public void marketWatcher_Returns_current_stock_status() throws Exception
     {
-        Stock uvsityCorp = new Stock("UV", "UVSITY Corporation ",
-                new BigDecimal(100.00));
+        Stock uvsityCorp = new Stock("PYPL", "PayPal Holding In ",
+                new BigDecimal(39.55));
 
         when(marketWatcher.getQuote(anyString())).thenReturn(uvsityCorp);
 
