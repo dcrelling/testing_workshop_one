@@ -4,12 +4,15 @@ import com.example.runkeeper.workshopone.lab2.dto.Stock;
 
 import java.math.BigDecimal;
 
+import javax.inject.Inject;
+
 
 public class StockBroker implements IStockBroker
 {
     private final static BigDecimal LIMIT = new BigDecimal("0.10");
     private final IMarketWatcher market;
 
+    @Inject
     public StockBroker(IMarketWatcher market)
     {
         this.market = market;
