@@ -14,6 +14,6 @@ public class StockBrokerModule
     @Provides
     public IMarketWatcher provideMarketWatcher()
     {
-        return new MarketWatcher();
+        return new MarketWatcher("MarketWatcherClass");
     }
 }

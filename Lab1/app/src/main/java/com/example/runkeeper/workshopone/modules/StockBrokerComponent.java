@@ -1,6 +1,7 @@
 package com.example.runkeeper.workshopone.modules;
 
 import com.example.runkeeper.workshopone.lab2.trading.StockBroker;
+import com.example.runkeeper.workshopone.main.Main;
 
 import dagger.Component;
 
